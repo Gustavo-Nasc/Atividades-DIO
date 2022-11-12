@@ -15,13 +15,20 @@ public class Desenvolvedor {
 	private String linkGithub;
 	private String linkLinkedin;
 	private double pretensaoSalarial;
-	private String tempoExperiencia;
+	private int tempoExperiencia;
 	private List<String> tecnologiasDominio = new ArrayList<>();
-	private List<String> idiomas = new ArrayList<>();
+	private List<Idioma> idiomas = new ArrayList<>();
 	
 	private List<FormacaoAcademica> formacaoAcademica = new ArrayList<>();
 	private List<ExperienciaProfissional> experienciaProfissional = new ArrayList<>();
+
+	// Métodos Construtores
 	
+	// Sem parâmetro
+	public Desenvolvedor() {
+		
+	}
+
 	// Métodos de Acesso da Classe
 	public String getNome() {
 		return nome;
@@ -77,35 +84,40 @@ public class Desenvolvedor {
 	public void setPretensaoSalarial(double pretensaoSalarial) {
 		this.pretensaoSalarial = pretensaoSalarial;
 	}
-	public String getTempoExperiencia() {
+	public int getTempoExperiencia() {
 		return tempoExperiencia;
 	}
-	public void setTempoExperiencia(String tempoExperiencia) {
+	public void setTempoExperiencia(int tempoExperiencia) {
 		this.tempoExperiencia = tempoExperiencia;
 	}
 	public List<String> getTecnologiasDominio() {
 		return tecnologiasDominio;
 	}
-	public void setTecnologiasDominio(List<String> tecnologiasDominio) {
-		this.tecnologiasDominio = tecnologiasDominio;
-	}
-	public List<String> getIdiomas() {
+	public List<Idioma> getIdiomas() {
 		return idiomas;
-	}
-	public void setIdiomas(List<String> idiomas) {
-		this.idiomas = idiomas;
 	}
 	public List<FormacaoAcademica> getFormacaoAcademica() {
 		return formacaoAcademica;
 	}
-	public void setFormacaoAcademica(List<FormacaoAcademica> formacaoAcademica) {
-		this.formacaoAcademica = formacaoAcademica;
-	}
 	public List<ExperienciaProfissional> getExperienciaProfissional() {
 		return experienciaProfissional;
 	}
-	public void setExperienciaProfissional(List<ExperienciaProfissional> experienciaProfissional) {
-		this.experienciaProfissional = experienciaProfissional;
+	
+	// Métodos adicionais
+	public void adicionarFormacaoAcadêmica(FormacaoAcademica formacaoAcademica) {
+		this.formacaoAcademica.add(formacaoAcademica);
+	}
+
+	public void adicionarExperienciaProfissional(ExperienciaProfissional experienciaProfissional) {
+		this.experienciaProfissional.add(experienciaProfissional);
+	}
+
+	public void adicionarTecnologiaDominio(String tecnologiaDominio) {
+		this.tecnologiasDominio.add(tecnologiaDominio);
+	}
+
+	public void adicionarIdioma(Idioma idioma) {
+		this.idiomas.add(idioma);
 	}
 	
 	// Override da Função 'toString' do Desenvolvedor
@@ -130,16 +142,16 @@ public class Desenvolvedor {
 		DecimalFormat formatoMonetario = new DecimalFormat();
 		
 		formatacaoDesenvolvedor.append(
-			"Nome: " + nome + "\n"
-			+ "Biografia: " + biografia + "\n"
-			+ "Email: " + email + "\n"
-			+ "Disponibilidade para ofertas de emprego? " + disponibilidadeOfertasEmprego + "\n"
-			+ "Cidade: " + cidade + "\n"
-			+ "Celular de Contato: " + this.getCelularContato() + "\n"
-			+ "Pretenção Salarial: R$ " + formatoMonetario.format(pretensaoSalarial) + "\n"
-			+ "GitHub: " +  linkGithub + "\n"
-			+ "LinkedIn: " + linkLinkedin + "\n"
-			+ "Tempo de Experiência: " + tempoExperiencia + "\n\n"
+			"Nome:\n" + nome + "\n\n"
+			+ "Biografia:\n" + biografia + "\n\n"
+			+ "Email:\n" + email + "\n\n"
+			+ "Disponibilidade para ofertas de emprego?\n" + disponibilidadeOfertasEmprego + "\n\n"
+			+ "Cidade:\n" + cidade + "\n\n"
+			+ "Celular de Contato:\n" + this.getCelularContato() + "\n\n"
+			+ "Pretenção Salarial:\nR$ " + formatoMonetario.format(pretensaoSalarial) + "\n\n"
+			+ "GitHub:\n" +  linkGithub + "\n\n"
+			+ "LinkedIn:\n" + linkLinkedin + "\n\n"
+			+ "Tempo de Experiência:\n" + tempoExperiencia + "\n\n"
 			
 			+ "Tecnologias de Domínio:\n"
 			+ tecnologiasDominio.toString() + "\n\n"
@@ -147,10 +159,8 @@ public class Desenvolvedor {
 			+ "Idiomas:\n"
 			+ idiomas.toString() + "\n\n"
 			
-			+ "Formação Acadêmica:\n"
 			+ formacaoAcademica.toString() + "\n\n"
 			
-			+ "Experiência Profissional:\n"
 			+ experienciaProfissional.toString()
 		);
 		

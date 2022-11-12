@@ -1,15 +1,17 @@
 package AbstracaoBootcamp.Desenvolvedor;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class ExperienciaProfissional {
 	// Atributos da Classe
 	private String empresa;
 	private String cargo;
 	private String descricaoCargo;
-	private Date dataEntrada;
-	private Date dataSaida;
+	private String dataEntrada;
+	private String dataSaida;
+
+	// Método Construtor sem Parâmetro
+	public ExperienciaProfissional() {
+		
+	}
 	
 	// Métodos de Acesso da Classe
 	public String getEmpresa() {
@@ -30,16 +32,16 @@ public class ExperienciaProfissional {
 	public void setDescricaoCargo(String descricaoCargo) {
 		this.descricaoCargo = descricaoCargo;
 	}
-	public Date getDataEntrada() {
+	public String getDataEntrada() {
 		return dataEntrada;
 	}
-	public void setDataEntrada(Date dataEntrada) {
+	public void setDataEntrada(String dataEntrada) {
 		this.dataEntrada = dataEntrada;
 	}
-	public Date getDataSaida() {
+	public String getDataSaida() {
 		return dataSaida;
 	}
-	public void setDataSaida(Date dataSaida) {
+	public void setDataSaida(String dataSaida) {
 		this.dataSaida = dataSaida;
 	}
 	
@@ -48,16 +50,11 @@ public class ExperienciaProfissional {
 	public String toString() {
 		StringBuilder formatamacaoExperiencia = new StringBuilder();
 		
-		String formatoData = "MMMM-yyyy";
-		SimpleDateFormat formatadorData = new SimpleDateFormat(formatoData);
-		String dataEntrada = formatadorData.format(this.getDataEntrada());
-		String dataSaida = formatadorData.format(this.getDataSaida());
-		
 		formatamacaoExperiencia.append(
-				"Formação Acadêmica:\n\n"
-				+ this.getEmpresa() + "\n"
-				+ this.getCargo() + "\n"
-				+ this.getDescricaoCargo() + "\n"
+				"Experiência Profissinal:\n"
+				+ empresa + "\n\n"
+				+ cargo + "\n"
+				+ descricaoCargo + "\n"
 				+ "(" + dataEntrada + " - " + dataSaida + ")"
 			);
 		

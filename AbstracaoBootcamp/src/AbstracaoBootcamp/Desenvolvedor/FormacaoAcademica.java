@@ -1,15 +1,17 @@
 package AbstracaoBootcamp.Desenvolvedor;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class FormacaoAcademica {
 	// Atributos da Classe
 	private String instituicaoEnsino;
 	private String nivelFormacao;
 	private String nomeCurso;
-	private Date dataInicio;
-	private Date dataConclusao;
+	private String dataInicio;
+	private String dataConclusao;
+
+	// Método Construtor sem Parâmetro
+	public FormacaoAcademica() {
+		
+	}
 	
 	// Métodos de Acesso da Classe
 	public String getInstituicaoEnsino() {
@@ -30,16 +32,16 @@ public class FormacaoAcademica {
 	public void setNomeCurso(String nomeCurso) {
 		this.nomeCurso = nomeCurso;
 	}
-	public Date getDataInicio() {
+	public String getDataInicio() {
 		return dataInicio;
 	}
-	public void setDataInicio(Date dataInicio) {
+	public void setDataInicio(String dataInicio) {
 		this.dataInicio = dataInicio;
 	}
-	public Date getDataConclusao() {
+	public String getDataConclusao() {
 		return dataConclusao;
 	}
-	public void setDataConclusao(Date dataConclusao) {
+	public void setDataConclusao(String dataConclusao) {
 		this.dataConclusao = dataConclusao;
 	}
 	
@@ -47,11 +49,6 @@ public class FormacaoAcademica {
 	@Override
 	public String toString() {
 		StringBuilder formatamacaoFormacao = new StringBuilder();
-		
-		String formatoData = "MMMM-yyyy";
-		SimpleDateFormat formatadorData = new SimpleDateFormat(formatoData);
-		String dataInicio = formatadorData.format(this.getDataInicio());
-		String dataConclusao = formatadorData.format(this.getDataConclusao());
 		
 		formatamacaoFormacao.append(
 			"Formação Acadêmica:\n\n"
