@@ -1,4 +1,4 @@
-package AbstracaoBootcamp.Desenvolvedor;
+package Desenvolvedor;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
@@ -119,10 +119,30 @@ public class Desenvolvedor {
 	public void adicionarIdioma(Idioma idioma) {
 		this.idiomas.add(idioma);
 	}
+	public String formatarLista(List<?> lista) {
+		StringBuilder formatacaoLista = new StringBuilder();
+		
+		for (int i = 0; i < lista.size(); i++) {
+			formatacaoLista.append(lista.get(i) + " ");
+		}
+		
+		return formatacaoLista.toString();
+	}
 	
 	// Override da Função 'toString' do Desenvolvedor
 	@Override
 	public String toString() {
+		StringBuilder formatacaoDesenvolvedor = new StringBuilder();
+		
+		formatacaoDesenvolvedor.append(
+			"Nome: " + nome
+			+ "\nEmail: " + email
+		);
+		
+		return formatacaoDesenvolvedor.toString();
+	}
+	
+	public String retornarDadosSemicompletos() {
 		StringBuilder formatacaoDesenvolvedor = new StringBuilder();
 		
 		formatacaoDesenvolvedor.append(
@@ -136,6 +156,7 @@ public class Desenvolvedor {
 		return formatacaoDesenvolvedor.toString();
 	}
 	
+	
 	public String retornarDadosCompletos() {
 		StringBuilder formatacaoDesenvolvedor = new StringBuilder();
 		
@@ -147,21 +168,21 @@ public class Desenvolvedor {
 			+ "Email:\n" + email + "\n\n"
 			+ "Disponibilidade para ofertas de emprego?\n" + disponibilidadeOfertasEmprego + "\n\n"
 			+ "Cidade:\n" + cidade + "\n\n"
-			+ "Celular de Contato:\n" + this.getCelularContato() + "\n\n"
+			+ "Celular de Contato:\n" + celularContato + "\n\n"
 			+ "Pretenção Salarial:\nR$ " + formatoMonetario.format(pretensaoSalarial) + "\n\n"
 			+ "GitHub:\n" +  linkGithub + "\n\n"
 			+ "LinkedIn:\n" + linkLinkedin + "\n\n"
 			+ "Tempo de Experiência:\n" + tempoExperiencia + "\n\n"
 			
 			+ "Tecnologias de Domínio:\n"
-			+ tecnologiasDominio.toString() + "\n\n"
+			+ formatarLista(tecnologiasDominio) + "\n\n"
 			
 			+ "Idiomas:\n"
-			+ idiomas.toString() + "\n\n"
+			+ formatarLista(idiomas) + "\n\n"
 			
-			+ formacaoAcademica.toString() + "\n\n"
+			+ formatarLista(formacaoAcademica) + "\n\n"
 			
-			+ experienciaProfissional.toString()
+			+ formatarLista(experienciaProfissional)
 		);
 		
 		return formatacaoDesenvolvedor.toString();

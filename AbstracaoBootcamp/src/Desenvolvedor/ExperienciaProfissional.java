@@ -1,4 +1,4 @@
-package AbstracaoBootcamp.Desenvolvedor;
+package Desenvolvedor;
 
 public class ExperienciaProfissional {
 	// Atributos da Classe

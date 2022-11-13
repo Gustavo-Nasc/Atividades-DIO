@@ -1,4 +1,4 @@
-package AbstracaoBootcamp.Desenvolvedor;
+package Desenvolvedor;
 
 public class Idioma {
     // Atributos da Classe
