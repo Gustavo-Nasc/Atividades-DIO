@@ -9,4 +9,4 @@
 - [Eclipse IDE](https://www.eclipse.org)
 
 ## 💻 Projeto
-Esse é um repositório referente a Atividades e Desafios realizados em Bootcamp's da [Digital Innovation One](dio.me/)
+Esse é um repositório referente a Atividades e Desafios realizados em Bootcamp's da [Digital Innovation One](https://dio.me/)

@@ -15,4 +15,4 @@ Dica: você pode dar um "fork" no Repositório do GitHub para organizar suas alt
 - [Eclipse IDE](https://www.eclipse.org)
 
 ### 💻 Projeto
-Esse é um repositório referente ao Desafio de Projeto: **Abstraindo um Bootcamp Usando Orientação a Objetos em Java**, do Bootcamp **Potência Tech powered by iFood - Java Beginners** da [Digital Innovation One](dio.me/)
+Esse é um repositório referente ao Desafio de Projeto: **Abstraindo um Bootcamp Usando Orientação a Objetos em Java**, do Bootcamp **Potência Tech powered by iFood - Java Beginners** da [Digital Innovation One](https://dio.me/)
