@@ -1,6 +1,8 @@
 # TypeScript
 
-## Iniciando um projeto em TypeScript
+## Curso: Introdução a TypeScrip
+
+#### Aula 01 - Iniciando um projeto em TypeScript
 
 ```bash
 # Iniciando um novo projeto Node.js
