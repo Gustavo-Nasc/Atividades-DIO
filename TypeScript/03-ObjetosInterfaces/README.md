@@ -18,8 +18,6 @@ interface InterfacePessoa {
 ---
 
 ### Type
-
-
 ```ts
 type TypePessoa = {
     nome: string,
