@@ -1,6 +1,6 @@
 # TypeScript
 
-## Curso: Introdução a TypeScrip
+## Curso: Introdução a TypeScript
 
 ### Aula 02 - Fundamentos e Sintaxe (Variáveis e tipos)
 
