@@ -37,14 +37,14 @@ const pessoa3: InterfacePessoa = {
 }
 
 // Array do tipo Objeto de Pessoas
-const arrayPessoas1: InterfacePessoa[] = [
+const arrayPessoas1: InterfacePessoa[] | TypePessoa[] = [
     pessoa2,
     pessoa3
 ]
 
 // ou
 
-const arrayPessoas2: Array<InterfacePessoa> = [
+const arrayPessoas2: Array<InterfacePessoa> | Array<TypePessoa> = [
     pessoa2,
     pessoa3
 ]

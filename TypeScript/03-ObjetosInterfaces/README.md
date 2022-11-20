@@ -25,3 +25,17 @@ type TypePessoa = {
     profissao?: string // Atributo Opcional com '?'
 }
 ```
+
+### Array
+A mesma tipagem abaixo serve para demais tipos de dados, como 'string' ou 'number'
+```ts
+const arrayPessoas1: InterfacePessoa[] | TypePessoa[] = [
+    pessoa2,
+    pessoa3
+]
+// ou
+const arrayPessoas2: Array<InterfacePessoa> | Array<TypePessoa> = [
+    pessoa2,
+    pessoa3
+]
+```
