@@ -2,7 +2,7 @@
 
 ## Curso: Programação Orientada a Objetos com TypeScript
 
-### Aula 03 - Herança
+### Aula 04 - Módulos
 
 #### Módulos
 Nós podemos criar nossas Classes separadamente, de forma que o código fique mais organizado e limpo
