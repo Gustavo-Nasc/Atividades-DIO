@@ -1,6 +1,6 @@
 # TypeScript
 
-## Curso: Programação Orientada a Objetos com TypeScript
+## Bootcamp: Formação TypeScript Fullstack Developer
 
 ### Atividade: Dio Bank
 
