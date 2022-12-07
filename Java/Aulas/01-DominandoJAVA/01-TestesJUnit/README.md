@@ -1,6 +1,8 @@
-# Testes Unitários com JUnit
+# Java
 
-## Por que escrever testes unitários?
+## Curso: Testes Unitários com JUnit
+
+### Aula 01 - Por que escrever testes unitários?
 
 - Os testes Unitários são chamados também de testes de unidade
 - Nesse momento de teste, estaremos testando a menor quantidade de código possível,
