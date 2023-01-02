@@ -2,7 +2,7 @@
 
 ## Curso: Testes Unitários com JUnit
 
-### Aula 05 - Assumptions e Testes condicionais
+### Aula 06 - Testando Exceptions
 
 Vamos pensar que, em algum caso hipotético, nós executamos uma operação e, ao invés de recebermos aquilo esperado, nós recebemos uma Exception como resposta.
 
