@@ -6,6 +6,8 @@
 
 Imaginenos um cenário hipotético, imaginar que temos uma Classe Responsável pela conexão com o nosso Banco de Dados.
 
+**Consulte os arquivos: *[BancoDeDados.java](./JUnitMaven/src/main/java/JUnitMaven/BancoDeDados.java)* e *[ConsultarDadosDePessoaTest.java](./JUnitMaven/src/test/java/JUnitMaven/ConsultarDadosDePessoaTest.java)***
+
 ```java
 import java.util.logging.Logger;
 
