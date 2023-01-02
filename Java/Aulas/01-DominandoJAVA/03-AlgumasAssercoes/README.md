@@ -8,6 +8,8 @@ Utilizando o mesmo repositório **Maven** da aula anterior, nós podemos testar 
 
 Para testá-las, criei uma nova Classe Teste chamada *AssertionsTest*.
 
+**Consulte o arquivo: *[AssertionsTest](./JUnitMaven/src/test/java/JUnitMaven/AssertionsTest.java)*.**
+
 #### Assertions.assertArrayEquals
 
 A primeira a ser testada será a *assertArrayEquals*, que valida se dois Arrays são iguais.
