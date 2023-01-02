@@ -4,6 +4,8 @@
 
 ### Aula 05 - Assumptions e Testes condicionais
 
+**Consulte os arquivos: *[AssumptionsTest.java](./JUnitMaven/src/test/java/JUnitMaven/AssumptionsTest.java)* e *[CondicionaisTest.java](./JUnitMaven/src/test/java/JUnitMaven/CondicionaisTest.java)***
+
 #### Assumptions
 
 Como o próprio nome diz, traduzido, as *Assumptions* estão atreladas a **suposições**, ou seja, está relacionado a assumir uma determinada condição.
