@@ -20,7 +20,7 @@ No meu caso, estou acessando a mesma pasta do *IntelliJ*, que é a pasta *~IdeaP
 
 O segundo passo é criar o projeto.
 
-Para criar um projeto por meio do Maven, após acertar as configurações em seu computador, precisamos executar o seguinte comando (Consulte as [Imagem 2]() e [Imagem 3]())
+Para criar um projeto por meio do Maven, após acertar as configurações em seu computador, precisamos executar o seguinte comando (Consulte as [Imagem 2](./img/img-2.png) e [Imagem 3](./img/img-3.png))
 
 ```powershell
 mvn archetype:generate -DgroupId=nomeDesejado -DartifactId=nomeDesejado -Darchetype=maven-archetype-quickstart -DinteractiveMode=false
@@ -32,7 +32,7 @@ mvn archetype:generate -DgroupId=nomeDesejado -DartifactId=nomeDesejado -Darchet
 
 ---
 
-![Imagem 3 - Projeto Criado](img/img-3.png)
+<img src="./img/img-3png" alt="Projeto foi criado em 'Batch mode' com sucesso" title="Projeto foi criado em 'Batch mode' com sucesso" />
 
 *Imagem 3 - Projeto criado com sucesso*
 
